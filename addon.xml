@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.netflixandroid"
+	name="Netflix Android"
+	version="1.0.0"
+	provider-name="ccarmonacalpe">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Netflix Android</summary>
+    <description lang="en">Create strm files to play the movies/tvshows of netflix from Kodi Library</description>
+    <summary lang="es">Netflix Android</summary>
+    <description lang="es">Crea ficheros strm para reproducir las películas y series de netflix desde la Biblioteca de Kodi</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="default.py" start="login|startup">
+  </extension>
+</addon>
